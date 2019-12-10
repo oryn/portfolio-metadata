@@ -5,25 +5,38 @@
   <title>Dinos ’R’ Us website design · Awesome Person’s Portfolio</title>
 </head>
 <body>
-  <figure itemref="data-author" itemscope itemtype="https://schema.org/WebSite">
-    <img itemprop="image" src="https://placehold.it/1600x900" alt="">
+  <figure>
+    <img src="https://placehold.it/1600x900" alt="">
     <figcaption>
-      <h2 itemprop="name">Dinos ’R’ Us</h2>
-      <p itemprop="description">A shop-at-home website dedicated to the many amazing dinosaur products.</p>
+      <h2>Dinos ’R’ Us</h2>
+      <p>A shop-at-home website dedicated to the many amazing dinosaur products.</p>
       <p>The goal of the project was create a pattern library for a large-scale website and show pattern examples on a few sample pages.</p>
-      <p itemprop="award"><em>Won the RGD Student Award 2015</em></p>
-      <a itemprop="url" href="#">View website</a>
-      <aside itemprop="keywords">Web, Responsive, CSS, Mobile, Dinosaurs</aside>
+      <p><em>Won the RGD Student Award 2015</em></p>
+      <a href="https://oryn.ca/work/dinos-r-us/">View website</a>
+      <aside>Web, Responsive, CSS, Mobile, Dinosaurs</aside>
     </figcaption>
   </figure>
-  <footer id="data-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-    <p>© <span>Matt Ryan</span></p>
-    <a itemprop="email" href="mailto:mryan.design@hotmail.com">mryan.design@hotmail.com</a>
-    <p itemProp="address" itemscope itemtype="https://schema.org/PostalAddress">
-      <span itemprop="addressLocality">Ottawa</span>,
-      <span itemprop="addressRegion">Ontario</span>,
-      <span itemprop="addressCountry">Canada</span>
-    </p>
-  </footer>
+
+  <footer role="contentinfo">
+    <p>Matt Ryan</p>
+    <a href="mailto:mryan.designhotmail.com">mryan.design@hotmail.com</a>
+    <address>
+      Ottawa, Ontario
+      <br>Canada
+    </address>
+  </footer>    
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Dinos 'R' Us",
+      "description": "A shop-at-home website dedicated to the many amazing dinosaur products."
+      "image": "https://placehold.it/1600x900",
+      "award": "Won the RGD Student Award 2015",
+      "url": "https://oryn.ca/work/dinos-r-us/",
+      "keywords": "Web, Responsive, CSS, Mobile, Dinosaurs"
+    }
+  </script>
 </body>
 </html>
